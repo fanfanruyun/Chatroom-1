@@ -12,4 +12,4 @@ Usage
 
 Note
 ----
-there are still a lots of hidden bugs inside. Watch out.
+there are still lots of hidden bugs inside. Watch out.
