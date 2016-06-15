@@ -89,13 +89,14 @@ class server:
             self.users.append((usr_id, usr_pwd))
             return True, "@success"
         usr_id, usr_pwd = args
+        jud = func(usr_id, usr_pwd)
         if jud[0]:
             self.sock_2_name[who] = usr_id
             self.logger.info("%s signed up\n" %usr_id)
             who.send("@success\n")
             self.broadcast(who, "@usrs_need_refresh\n")
         else:
-            who.send(jud[1]+"\n")
+            who.send(jud[1])
 
     # potocal 3
     def pensonal_chat(self, args, who):

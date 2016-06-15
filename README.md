@@ -9,7 +9,3 @@ Usage
 ![login](http://7xl4a3.com1.z0.glb.clouddn.com/Screenshot%20from%202016-06-02%2000-15-16.png)
 ![Chatroom](http://7xl4a3.com1.z0.glb.clouddn.com/Screenshot%20from%202016-06-02%2000-33-12.png)
 
-
-Note
-----
-there are still lots of hidden bugs inside. Watch out.

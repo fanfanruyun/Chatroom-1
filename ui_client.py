@@ -14,6 +14,7 @@ class Login(QtGui.QDialog, ui_login.Ui_Login):
         #self.ui = Ui_Login()
         self.setupUi(self)
         self.btn_signin.clicked.connect(self.handle_sign_in)
+        self.btn_signup.clicked.connect(self.handle_sign_up)
 
     def handle_sign_in(self):
         usr_name = self.edit_usr.text()
@@ -31,7 +32,7 @@ class Login(QtGui.QDialog, ui_login.Ui_Login):
         usr_name = self.edit_usr.text()
         pwd = self.edit_pwd.text()
         print usr_name, pwd
-        self.signal_sin_up.emit(usr_name, pwd)
+        self.signal_sign_up.emit(usr_name, pwd)
 
 
     def errorAlert(self, s):
